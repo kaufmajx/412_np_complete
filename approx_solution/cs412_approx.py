@@ -2,19 +2,32 @@
 Name: Morgan Wagner
 Honor Code and Acknowledgments:
 This work complies with the JMU Honor Code.
+Comments here on your code and submission.
 """
 
 #!/usr/bin/env python3
 import sys
-import random
 
 def read_graph():
+    """
+    Reads a graph in the format:
+
+        m
+        u v
+        u v
+        ...
+
+    Where m = number of edges.
+    Vertex labels are arbitrary positive integers.
+    We normalize them to 0..n-1 internally.
+    """
     data = sys.stdin.read().strip().split()
     if not data:
         print("Input is empty.")
         sys.exit(1)
 
     m = int(data[0])
+
     edges = []
     idx = 1
     max_vertex = 0
@@ -27,7 +40,10 @@ def read_graph():
         edges.append((u, v))
         max_vertex = max(max_vertex, u, v)
 
+    # number of vertices is max label
     n = max_vertex
+
+    # build adjacency list (0-index the vertices)
     adj = [[] for _ in range(n)]
 
     for (u, v) in edges:
@@ -39,14 +55,14 @@ def read_graph():
     return n, adj
 
 
-def greedy_coloring_random_order(n, adj):
-    """Greedy coloring in a random vertex order."""
-    order = list(range(n))
-    random.shuffle(order)
-
+def greedy_coloring(n, adj):
+    """
+    Basic greedy coloring:
+      For each vertex 0..n-1, assign the smallest legal color.
+    """
     color = [-1] * n
 
-    for v in order:
+    for v in range(n):
         forbidden = set()
         for nb in adj[v]:
             if color[nb] != -1:
@@ -64,24 +80,11 @@ def greedy_coloring_random_order(n, adj):
 
 def main():
     n, adj = read_graph()
+    num_colors, assignment = greedy_coloring(n, adj)
 
-    iterations = 1000
-
-    best_num_colors = float("inf")
-    best_assignment = None
-
-    for i in range(1, iterations + 1):
-        num_colors, assignment = greedy_coloring_random_order(n, adj)
-
-        if num_colors < best_num_colors:
-            best_num_colors = num_colors
-            best_assignment = assignment[:]
-            print(f"New best: {best_num_colors} colors (iteration {i})")
-
-    # Print final best solution
-    print("\nFinal best color count:", best_num_colors)
+    print(num_colors)
     #for v in range(n):
-    #    print(v + 1, best_assignment[v])
+    #    print(v + 1, assignment[v])  # convert back to 1-indexed
 
 
 if __name__ == "__main__":
