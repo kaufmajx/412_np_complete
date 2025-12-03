@@ -1,28 +1,31 @@
-#!/usr/bin/env python3
+"""
+Name: Morgan Wagner
+Min-Graph-Coloring Exact Solution
+Honor Code and Acknowledgments:
+This work complies with the JMU Honor Code.
+Comments here on your code and submission.
+"""
 import sys
 import random
 
-def read_graph():
-    lines = sys.stdin.read().splitlines()
-    if not lines:
-        print("Input is empty.")
-        sys.exit(1)
 
+def read_graph():
     # Read first non-empty line for m
-    i = 0
-    while i < len(lines) and lines[i].strip() == "":
-        i += 1
-    m = int(lines[i].strip())
-    i += 1
+    m_line = input().strip()
+    while m_line == "":
+        m_line = input().strip()
+    m = int(m_line)
 
     edges = []
     label_to_id = {}
     next_id = 0
 
-    # Read exactly m edges
-    while len(edges) < m and i < len(lines):
-        line = lines[i].strip()
-        i += 1
+    # Read exactly m edges from input()
+    while len(edges) < m:
+        try:
+            line = input().strip()
+        except EOFError:
+            break
 
         if line == "" or line.startswith("#"):
             continue
@@ -56,7 +59,6 @@ def read_graph():
         adj[u].append(v)
         adj[v].append(u)
 
-    # Reverse map
     id_to_label = {v: k for k, v in label_to_id.items()}
 
     return n, adj, id_to_label
@@ -84,7 +86,16 @@ def greedy_coloring_random_order(n, adj):
 def main():
     n, adj, id_to_label = read_graph()
 
+    # Default
     iterations = 1000
+
+    # If a command line argument is given, override
+    if len(sys.argv) > 1:
+        try:
+            iterations = int(sys.argv[1])
+        except ValueError:
+            print("Invalid iterations argument; using default 1000.")
+            
     best_num_colors = float("inf")
     best_assignment = None
 

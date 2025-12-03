@@ -1,0 +1,60 @@
+*******************************************************
+Running 50 vertice 100 edge case approximation
+
+Running 50 vertice 100 edge case exact
+
+Results for graph_50_100.txt:
+approximation: 4
+exact:         3
+*******************************************************
+*******************************************************
+Running 50 vertice 125 edge case approximation
+
+Running 50 vertice 125 edge case exact
+
+Results for graph_50_125.txt:
+approximation: 4
+exact:         4
+*******************************************************
+*******************************************************
+Running 50 vertice 150 edge case approximation
+
+Running 50 vertice 150 edge case exact
+
+Results for graph_50_150.txt:
+approximation: 4
+exact:         4
+*******************************************************
+*******************************************************
+Running 50 vertice 175 edge case approximation
+
+Running 50 vertice 175 edge case exact
+
+Results for graph_50_175.txt:
+approximation: 5
+exact:         4
+*******************************************************
+*******************************************************
+Running 50 vertice 200 edge case approximation
+
+Running 50 vertice 200 edge case exact
+
+Results for graph_50_200.txt:
+approximation: 5
+exact:         5
+*******************************************************
+*******************************************************
+Running non optimal approximation
+
+Running non optimal exact
+
+Results for non_opt.txt:
+approximation: 4
+exact:         4
+*******************************************************
+*******************************************************
+Running 50000 edge case approximation
+
+Results for graph_50000.txt:
+approximation: 6
+*******************************************************
