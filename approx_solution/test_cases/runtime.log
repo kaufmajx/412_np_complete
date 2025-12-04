@@ -1,52 +1,13 @@
-python3: can't open file '/cs/home/stu/wagne2mr/cs412/412_np_complete/approx_solution/test_cases/cs412_mingraphcolor_approx.py': [Errno 2] No such file or directory
-Command exited with non-zero status 2
-approx time: 0:00.02 (0.02 secs)
-python3: can't open file '/cs/home/stu/wagne2mr/cs412/412_np_complete/approx_solution/test_cases/cs412_mingraphcolor_exact.py': [Errno 2] No such file or directory
-Command exited with non-zero status 2
-exact time: 0:00.02 (0.02 secs)
-python3: can't open file '/cs/home/stu/wagne2mr/cs412/412_np_complete/approx_solution/test_cases/cs412_mingraphcolor_approx.py': [Errno 2] No such file or directory
-Command exited with non-zero status 2
-approx time: 0:00.01 (0.01 secs)
-python3: can't open file '/cs/home/stu/wagne2mr/cs412/412_np_complete/approx_solution/test_cases/cs412_mingraphcolor_exact.py': [Errno 2] No such file or directory
-Command exited with non-zero status 2
-exact time: 0:00.02 (0.02 secs)
-python3: can't open file '/cs/home/stu/wagne2mr/cs412/412_np_complete/approx_solution/test_cases/cs412_mingraphcolor_approx.py': [Errno 2] No such file or directory
-Command exited with non-zero status 2
-approx time: 0:00.02 (0.02 secs)
-python3: can't open file '/cs/home/stu/wagne2mr/cs412/412_np_complete/approx_solution/test_cases/cs412_mingraphcolor_exact.py': [Errno 2] No such file or directory
-Command exited with non-zero status 2
-exact time: 0:00.02 (0.02 secs)
-python3: can't open file '/cs/home/stu/wagne2mr/cs412/412_np_complete/approx_solution/test_cases/cs412_mingraphcolor_approx.py': [Errno 2] No such file or directory
-Command exited with non-zero status 2
-approx time: 0:00.02 (0.02 secs)
-python3: can't open file '/cs/home/stu/wagne2mr/cs412/412_np_complete/approx_solution/test_cases/cs412_mingraphcolor_exact.py': [Errno 2] No such file or directory
-Command exited with non-zero status 2
-exact time: 0:00.02 (0.02 secs)
-python3: can't open file '/cs/home/stu/wagne2mr/cs412/412_np_complete/approx_solution/test_cases/cs412_mingraphcolor_approx.py': [Errno 2] No such file or directory
-Command exited with non-zero status 2
-approx time: 0:00.02 (0.02 secs)
-python3: can't open file '/cs/home/stu/wagne2mr/cs412/412_np_complete/approx_solution/test_cases/cs412_mingraphcolor_exact.py': [Errno 2] No such file or directory
-Command exited with non-zero status 2
-exact time: 0:00.02 (0.02 secs)
-python3: can't open file '/cs/home/stu/wagne2mr/cs412/412_np_complete/approx_solution/test_cases/cs412_mingraphcolor_approx.py': [Errno 2] No such file or directory
-Command exited with non-zero status 2
-approx time: 0:00.02 (0.02 secs)
-python3: can't open file '/cs/home/stu/wagne2mr/cs412/412_np_complete/approx_solution/test_cases/cs412_mingraphcolor_exact.py': [Errno 2] No such file or directory
-Command exited with non-zero status 2
-exact time: 0:00.02 (0.02 secs)
-python3: can't open file '/cs/home/stu/wagne2mr/cs412/412_np_complete/approx_solution/test_cases/cs412_mingraphcolor_approx.py': [Errno 2] No such file or directory
-Command exited with non-zero status 2
-approx time: 0:00.02 (0.02 secs)
-approx time: 0:00.05 (0.05 secs)
-exact time: 0:01.37 (1.37 secs)
-approx time: 0:00.06 (0.06 secs)
-exact time: 0:00.29 (0.29 secs)
-approx time: 0:00.06 (0.06 secs)
-exact time: 0:00.12 (0.12 secs)
-approx time: 0:00.07 (0.07 secs)
-exact time: 0:00.93 (0.93 secs)
-approx time: 0:00.07 (0.07 secs)
-exact time: 1:08.57 (68.57 secs)
-approx time: 0:00.03 (0.03 secs)
-exact time: 0:00.02 (0.02 secs)
-approx time: 0:17.65 (17.65 secs)
+approx time graph_50_100.txt: 0:00.03 (0.03 secs)
+exact time  graph_50_100.txt: 0:01.40 (1.40 secs)
+approx time graph_50_125.txt: 0:00.02 (0.02 secs)
+exact time  graph_50_125.txt: 0:00.29 (0.29 secs)
+approx time graph_50_150.txt: 0:00.02 (0.02 secs)
+exact time  graph_50_150.txt: 0:00.12 (0.12 secs)
+approx time graph_50_175.txt: 0:00.03 (0.03 secs)
+exact time  graph_50_175.txt: 0:00.90 (0.90 secs)
+approx time graph_50_200.txt: 0:00.02 (0.02 secs)
+exact time  graph_50_200.txt: 1:10.78 (70.78 secs)
+approx time non_opt.txt: 0:00.02 (0.02 secs)
+exact time  non_opt.txt: 0:00.02 (0.02 secs)
+approx time graph_50000.txt: 0:01.92 (1.92 secs)

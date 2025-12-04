@@ -87,7 +87,7 @@ def main():
     n, adj, id_to_label = read_graph()
 
     # Default
-    iterations = 1000
+    iterations = 100
 
     # If a command line argument is given, override
     if len(sys.argv) > 1:
